@@ -170,7 +170,7 @@
       <div class="push-news__grid">
         <a href="#" class="push-news__item">
           <picture>
-            <source media="(max-width: 950px)" srcset="https://i.picsum.photos/id/849/910/910.jpg">
+            <source media="(max-width: 950px)" srcset="https://picsum.photos/id/849/910/910.jpg">
             <img src="https://picsum.photos/id/849/385/640.jpg">
           </picture>
           <span class="push-news__tag">Tendance</span>

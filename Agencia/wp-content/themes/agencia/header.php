@@ -7,7 +7,7 @@
  <?php wp_head()?> 
 </head>
 <body <?php body_class(); ?>>
-<header class="nav">
+<header class="nav ">
 
   <a href="<?= home_url('/') ?>" class="nav__logo" title="<?= __('Homepage', 'agencia') ?>">
     <img src="<?= get_theme_mod('logo') ?>" alt="">
