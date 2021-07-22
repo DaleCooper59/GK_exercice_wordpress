@@ -3,6 +3,7 @@
 /**
  * Plugin Name: Agence plugin
  */
+defined('ABSPATH') or die('Rien à voir');
 add_action('init', function(){
 
     register_post_type('property', [
@@ -37,6 +38,7 @@ add_action('init', function(){
             'item_scheduled'           =>__('Property scheduled', 'agence'),
             'item_updated'             =>__('Property updated', 'agence'),
         ],
+        'has_archive' => true,
         'public' => true,
         'hierarchical' => false,
         'show_ui'=> true,
@@ -133,6 +135,7 @@ add_action('init', function(){
 register_activation_hook(__FILE__, 'flush_rewrite_rules');
 register_deactivation_hook(__FILE__, 'flush_rewrite_rules');
 
+require_once('query.php');
 
 /**
  * show city and postal-code

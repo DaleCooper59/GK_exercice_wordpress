@@ -10,7 +10,7 @@
                     <div class="bien__location"><?= agence_city(get_post()) ?></div>
                     <div class="bien__price">
                         <?php if (get_field('property_category') === 'buy') : ?>
-                            <?= sprintf('%s $', get_field('price')); ?>
+                            <?= sprintf('%s $','agence', get_field('price')); ?>
                         <?php else : ?>
                             <?= 'Location = ' . sprintf('%s $/mois', get_field('price')); ?>
                         <?php endif; ?>
